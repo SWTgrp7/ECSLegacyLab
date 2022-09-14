@@ -5,10 +5,21 @@ namespace ECS.Legacy
     public class ECS
     {
         private int _threshold;
-        private readonly TempSensor _tempSensor;
-        private readonly Heater _heater;
+        private readonly ITempSensor _tempSensor;
+        private readonly IHeater _heater;
 
-        public ECS(int thr)
+
+        //Specifik Constructor for test
+        public ECS(int thr,ITempSensor tempSensor,IHeater heater)
+        {
+            SetThreshold(thr);
+            _tempSensor = tempSensor;
+            _heater = heater;
+        }
+
+
+        //Standard produktion code
+            public ECS(int thr)
         {
             SetThreshold(thr);
             _tempSensor = new TempSensor();
