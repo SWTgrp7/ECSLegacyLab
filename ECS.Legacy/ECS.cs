@@ -5,9 +5,12 @@ namespace ECS.Legacy
     public class ECS
     {
         private int _threshold;
-        private readonly ITempSensor _tempSensor;
-        private readonly IHeater _heater;
+        private ITempSensor _tempSensor;
+        private IHeater _heater;
 
+        
+        public ITempSensor TempSensor { get => _tempSensor; set => _tempSensor = value; }
+        public IHeater Heater { get => _heater; set => _heater = value; }
 
         //Specifik Constructor for test
         public ECS(int thr,ITempSensor tempSensor,IHeater heater)
