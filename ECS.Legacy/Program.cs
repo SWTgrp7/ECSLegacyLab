@@ -9,7 +9,7 @@ namespace ECS.Legacy
             Console.WriteLine("Testing ECS.Legacy");
 
             // Make an ECS with a threshold of 23
-            var control = new ECS(23);
+            var control = new ECSControl(23);
 
             for (int i = 1; i <= 15; i++)
             {
@@ -17,8 +17,6 @@ namespace ECS.Legacy
 
                 control.Regulate();
             }
-
-
         }
     }
 }

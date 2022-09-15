@@ -2,7 +2,7 @@
 
 namespace ECS.Legacy
 {
-    public class ECS
+    public class ECSControl
     {
         private int _threshold;
         private ITempSensor _tempSensor;
@@ -13,7 +13,7 @@ namespace ECS.Legacy
         public IHeater Heater { get => _heater; set => _heater = value; }
 
         //Specifik Constructor for test
-        public ECS(int thr,ITempSensor tempSensor,IHeater heater)
+        public ECSControl(int thr,ITempSensor tempSensor,IHeater heater)
         {
             SetThreshold(thr);
             _tempSensor = tempSensor;
@@ -22,7 +22,7 @@ namespace ECS.Legacy
 
 
         //Standard produktion code
-            public ECS(int thr)
+            public ECSControl(int thr)
         {
             SetThreshold(thr);
             _tempSensor = new TempSensor();

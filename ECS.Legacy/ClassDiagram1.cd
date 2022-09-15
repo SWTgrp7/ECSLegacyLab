@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="ECS.Legacy.ECS">
+  <Class Name="ECS.Legacy.ECSControl">
     <Position X="4" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAABAAAAAAAAAIAAAAAAAACBAAAAAAAgCAAAAIAA=</HashCode>
-      <FileName>ECS.cs</FileName>
+      <HashCode>AAAEAABAAAAAAAAAIAAAAAAAACBAAAAACAgCAAAAIAA=</HashCode>
+      <FileName>ECSControl.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="_heater" />
       <Field Name="_tempSensor" />
+      <Field Name="_heater" />
     </ShowAsAssociation>
   </Class>
   <Class Name="ECS.Legacy.Heater">
@@ -21,22 +21,6 @@
   </Class>
   <Class Name="ECS.Legacy.TempSensor">
     <Position X="7.75" Y="1.25" Width="2.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAACAAAAAQAAAAABAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>TempSensor.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="ECS.Legacy.FakeHeater">
-    <Position X="0.5" Y="3.5" Width="2.5" />
-    <TypeIdentifier>
-      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA=</HashCode>
-      <FileName>Heater.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="ECS.Legacy.FakeTempSensor">
-    <Position X="7.75" Y="3.75" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAACAAAAAQAAAAABAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TempSensor.cs</FileName>
